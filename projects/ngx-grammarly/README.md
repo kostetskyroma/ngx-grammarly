@@ -1,24 +1,19 @@
 # NgxGrammarly
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+This library provide opportunity to use the Grammarly Text Editor SDK in your application, that allows you to bring real-time writing suggestions to your users. The SDK lets you easily add and configure the Grammarly Text Editor Plugin. In text fields and editors that use the plugin, your users will get Grammarly’s best-in-class writing support as they type, without needing to download Grammarly or create an account.
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name --project ngx-grammarly` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-grammarly`.
-> Note: Don't forget to add `--project ngx-grammarly` or else it will be added to the default project in your `angular.json` file. 
+The grammarly-editor-plugin can wrap the following types of elements:
 
-## Build
-
-Run `ng build ngx-grammarly` to build the project. The build artifacts will be stored in the `dist/` directory.
+    - <input type='text'>
+    - <textarea>
+    - elements with attribute contenteditable="true"
 
 ## Publishing
 
-After building your library with `ng build ngx-grammarly`, go to the dist folder `cd dist/ngx-grammarly` and run `npm publish`.
+After building your library with `npm run build:ngx-grammarly`, go to the dist folder `cd dist/ngx-grammarly` and run `npm publish`.
 
 ## Running unit tests
 
 Run `ng test ngx-grammarly` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
