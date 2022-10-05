@@ -3,5 +3,6 @@
   "dest": "../../dist/ngx-grammarly",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["@grammarly/editor-sdk"]
 }
