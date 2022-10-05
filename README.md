@@ -1,27 +1,52 @@
-# NgxGrammarly
+# Ngx-Grammarly
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+This library provide opportunity to use the Grammarly Text Editor SDK in your application, that allows you to bring real-time writing suggestions to your users. The SDK lets you easily add and configure the Grammarly Text Editor Plugin. In text fields and editors that use the plugin, your users will get Grammarly’s best-in-class writing support as they type, without needing to download Grammarly or create an account.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+        npm install ngx-grammarly
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The grammarly-editor-plugin can wrap the following types of elements:
 
-## Build
+    - <input type='text'>
+    - <textarea>
+    - elements with attribute contenteditable="true"
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+\*.module.ts
+
+    import { NgxGrammarlyModule } from 'ngx-grammarly';
+
+    ...
+    imports: [ NgxGrammarlyModule.forRoot({ clientId: 'YOUR_API_KEY' }) ]
+    ...
+
+\*.component.html
+
+    <ngx-grammarly>
+        <h2>Textarea</h2>
+        <textarea id="textarea" [value]="demoText.textarea" rows="10"> </textarea>
+    </ngx-grammarly>
+
+    <ngx-grammarly>
+        <h2 for="input">Input</h2>
+        <input type="text" id="input" [value]="demoText.input" />
+    </ngx-grammarly>
+
+    <ngx-grammarly>
+        <h2>Contenteditable</h2>
+        <div id="contenteditable" contentEditable="true" [innerHTML]="demoText.contenteditable"></div>
+    </ngx-grammarly>
+
+[Source](https://github.com/kostetskyroma/ngx-grammarly/tree/master/projects/ngx-grammarly)
+<br>
+[NPM](https://www.npmjs.com/package/ngx-grammarly)
+
+## Publishing
+
+After building your library with `npm run build:ngx-grammarly`, go to the dist folder `cd dist/ngx-grammarly` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `ng test ngx-grammarly` to execute the unit tests via [Karma](https://karma-runner.github.io).
