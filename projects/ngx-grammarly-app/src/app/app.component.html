@@ -1,4 +1,18 @@
 <ngx-grammarly>
-  <label for="text-1">Text 1</label>
-  <textarea id="text-1"></textarea>
+  <h2>Textarea</h2>
+  <textarea id="textarea" [value]="demoText.textarea" rows="10"> </textarea>
+</ngx-grammarly>
+
+<ngx-grammarly>
+  <h2 for="input">Input</h2>
+  <input type="text" id="input" [value]="demoText.input" />
+</ngx-grammarly>
+
+<ngx-grammarly>
+  <h2>Contenteditable</h2>
+  <div
+    id="contenteditable"
+    contentEditable="true"
+    [innerHTML]="demoText.contenteditable"
+  ></div>
 </ngx-grammarly>

@@ -1,5 +1,22 @@
 :host {
+    input,
+    textarea,
+    [contenteditable] {
+    font: inherit;
+    line-height: 1.5;
+    width: 600px;
+    padding: 8px 12px;
+    overflow: auto;
+    }
+    
     label {
-        display: block;
+    display: block;
+    margin-bottom: 4px;
+    }
+    
+    [contenteditable] {
+    height: 10rem;
+    border: 1px solid;
+    resize: both;
     }
 }
