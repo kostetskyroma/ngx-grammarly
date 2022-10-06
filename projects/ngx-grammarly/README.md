@@ -2,6 +2,24 @@
 
 This library provide opportunity to use the Grammarly Text Editor SDK in your application, that allows you to bring real-time writing suggestions to your users. The SDK lets you easily add and configure the Grammarly Text Editor Plugin. In text fields and editors that use the plugin, your users will get Grammarly’s best-in-class writing support as they type, without needing to download Grammarly or create an account.
 
+[![GitHub issues](https://img.shields.io/github/issues/kostetskyroma/ngx-grammarly)](https://github.com/kostetskyroma/ngx-grammarly/issues)
+[![GitHub forks](https://img.shields.io/github/forks/kostetskyroma/ngx-grammarly)](https://github.com/kostetskyroma/ngx-grammarly/network)
+[![GitHub stars](https://img.shields.io/github/stars/kostetskyroma/ngx-grammarly)](https://github.com/kostetskyroma/ngx-grammarly/stargazers)
+[![GitHub license](https://img.shields.io/github/license/kostetskyroma/ngx-grammarly)](https://github.com/kostetskyroma/ngx-grammarly/blob/master/LICENSE)
+
+[![Support](https://img.shields.io/badge/Support-Angular%2013%2B-blue.svg?style=flat-square)]()
+[![Support](https://img.shields.io/badge/Support-Angular%2014%2B-blue.svg?style=flat-square)]()
+
+## What's New
+
+- Angular 14 support 🥳
+
+## Compatibility
+
+| Angular 14  | Angular 13  |
+| ----------- | ----------- |
+| >=`v14.0.1` | >=`v13.0.2` |
+
 ## Installation
 
         npm install ngx-grammarly
